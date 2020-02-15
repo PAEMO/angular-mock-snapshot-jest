@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ParentComponentComponent should render 1`] = `
+<app-parent-component>
+  <p>
+    parent-component works!
+  </p><app-child-component
+    age="27"
+    name="PA"
+    ng-reflect-age="27"
+    ng-reflect-name="PA"
+  /><span>
+    Child component is above
+  </span>
+</app-parent-component>
+`;

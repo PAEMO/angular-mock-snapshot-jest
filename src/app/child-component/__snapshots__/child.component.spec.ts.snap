@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChildComponentComponent should render with inputs filled and specific mock 1`] = `
+<app-child-component
+  age={[Function Number]}
+  name={[Function String]}
+  serviceDependencyChild={[Function Object]}
+>
+  <p>
+    child-component works!
+  </p><span>
+    From inputs : John is 42
+  </span><span>
+    Return from service : Another specific return
+  </span>
+</app-child-component>
+`;
+
+exports[`ChildComponentComponent should render without any input 1`] = `
+<app-child-component
+  serviceDependencyChild={[Function Object]}
+>
+  <p>
+    child-component works!
+  </p><span>
+    From inputs :  is 
+  </span><span>
+    Return from service : Return from mock
+  </span>
+</app-child-component>
+`;
