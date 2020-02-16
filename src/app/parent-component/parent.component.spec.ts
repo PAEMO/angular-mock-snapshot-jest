@@ -1,8 +1,8 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {ParentComponent} from './parent.component';
-import {ChildComponent} from '../child-component/child.component';
-import {MockComponent} from 'ng-mocks';
+import { ParentComponent } from './parent.component';
+import { ChildComponent } from '../child-component/child.component';
+import { MockComponent } from 'ng-mocks';
 
 describe('ParentComponentComponent', () => {
   let component: ParentComponent;
@@ -10,12 +10,8 @@ describe('ParentComponentComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        ParentComponent,
-        MockComponent(ChildComponent)
-      ]
-    })
-      .compileComponents();
+      declarations: [ParentComponent, MockComponent(ChildComponent)]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -30,5 +26,9 @@ describe('ParentComponentComponent', () => {
 
   it('should render', () => {
     expect(fixture).toMatchSnapshot();
+  });
+
+  it('should check data from component with snapshot testing', () => {
+    expect(component.complexedData).toMatchSnapshot();
   });
 });

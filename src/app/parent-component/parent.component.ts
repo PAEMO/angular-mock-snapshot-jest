@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-parent-component',
@@ -7,7 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  constructor() { }
+  complexedData = {
+    id: 2,
+    type: 1,
+    person: {
+      name: 'John Doe',
+      age: 42
+    }
+  };
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

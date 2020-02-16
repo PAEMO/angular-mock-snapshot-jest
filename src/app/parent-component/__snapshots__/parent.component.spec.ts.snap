@@ -1,7 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ParentComponentComponent should check data from component with snapshot testing 1`] = `
+Object {
+  "id": 2,
+  "person": Object {
+    "age": 42,
+    "name": "John Doe",
+  },
+  "type": 1,
+}
+`;
+
 exports[`ParentComponentComponent should render 1`] = `
-<app-parent-component>
+<app-parent-component
+  complexedData={[Function Object]}
+>
   <p>
     parent-component works!
   </p><app-child-component
